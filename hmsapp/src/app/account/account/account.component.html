@@ -1,0 +1,21 @@
+<!-- {{ myonload() }} -->
+<div id="intro">
+    <div id="intro-head">
+        <u>Your Bookings :</u><br>
+    </div><br>
+    <div id="intro-text">
+        <div *ngFor="let user of users">
+            <div *ngFor="let book of book">
+                <div *ngIf="myusername==user.username && myusername==book.username">
+                    Name : {{ user.name }}<br>
+                    Room Type : {{ book.roomtype }}<br>
+                    Checkin : {{ book.checkin }}<br>
+                    Checkout : {{ book.checkout }}<br>
+                    Review : {{ book.feedback }}<br>
+                    <button class="delete" (click)="delete(book)"><b>Cancel Booking</b></button><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

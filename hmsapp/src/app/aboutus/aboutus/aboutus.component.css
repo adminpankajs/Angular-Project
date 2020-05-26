@@ -1,0 +1,66 @@
+#book-main{
+    text-align: center;
+    width: 98vw;
+    overflow: hidden;
+    margin-top: -8vh;
+}
+#book-div{
+    /* overflow: hidden; */
+    width: 50vw;
+    height: 35vw;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: solid black; */
+    box-shadow: 10px 10px 10px grey;
+}
+
+#book-img{
+    max-width: 25vw;
+    height: 35vw;
+    overflow: hidden;
+    float: left;
+}
+
+#book-img-prop{
+    overflow: hidden;
+    height: 36vw;
+}
+
+#book-details{
+}
+
+#details-head{
+    font-size: 2vw;
+    color: teal;
+}
+#booknow-div{
+    margin-top: 10vh;
+}
+
+#booknow-button{
+    width: 15vw;
+    height: 5vw;
+    margin-top: 0vh;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    border-radius: 2vw;
+    box-shadow: 0vw 1vw 1vw grey;
+}
+
+#booknow-button:hover{
+    cursor: pointer;
+    color: rgb(0, 173, 173);
+    background-color: whitesmoke;
+}
+
+#booknow-link{
+    color: white;
+    text-decoration: none;
+}
+
+#booknow-link:hover{
+    color: teal;
+}

@@ -1,0 +1,24 @@
+{{ checklogin() }}
+<div id="signin">
+    <div id="signin-form">
+        <img id="form-logo" src="../../../assets/Logo.jpg" alt=""><br>
+        <div *ngIf="loggedin;then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+            <h1 style="color: white;">Successfully Logged in. Please go to home</h1>
+            <button type="submit" id="signin-button"><a href="/home">Home</a></button>
+        </ng-template>
+        <ng-template #elseBlock>
+            <form #userForm="ngForm" (ngSubmit) = "onSubmit(userForm.value)">
+            <!-- <form #userForm="ngForm" (ngSubmit) = "onSubmit()">
+                <button type="submit">MYBUTTON</button>
+            </form> -->
+            <!-- <form #userForm="ngForm" (ngSubmit) = "onSubmit()"> -->
+                <p class="form-ques">Username</p>
+                <input class="form-textbox" type="text" name="username" ngModel><br>
+                <p class="form-ques">Password</p>
+                <input class="form-textbox" type="password" name="password" ngModel><br>
+                <button type="submit" id="signin-button">Signin</button>
+            </form>
+        </ng-template>
+    </div>
+</div>

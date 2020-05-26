@@ -1,0 +1,53 @@
+#signup
+{
+    background-image: url("../../../assets/signup.jpg");
+    width: 98vw;
+    height: 86vh;
+    margin-top: -6.5vw;
+    text-align: center;
+}
+
+#signup-form{
+    width: 50vw;
+    height: 60vh;
+    padding: 2vw;
+    margin-left: 23vw;
+    margin-right: auto;
+    position: absolute;
+    margin-top: 15vh;
+    background-color: rgba(22, 22, 22, 0.5);
+}
+
+#form-logo{
+    width: 10vw;
+    margin-top: 5vh;
+}
+
+.form-ques{
+    color: white;
+    font-size: 1vw;
+}
+
+.float-l{
+    float: left;
+}
+
+.float-r{
+    float: right;
+}
+
+.form-textbox{
+    height: 2vh;
+    width: 8vw;
+    font-size: larger;
+}
+
+#signup-button{
+    background-color: rgb(215, 100, 0);
+    margin-top: 2vh;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 5vw;
+    font-size: 1.25vw;
+    color: white;
+}

@@ -1,0 +1,36 @@
+<div id="navbar">
+    <div id="nav-logo">
+        <img id="logo" src="../../../assets/Logo.jpg">
+    </div>
+    <div class="nav-item">
+        <button class="nav-button"><a style="text-decoration: none;" href="/home">Home</a></button>
+    </div>
+    <div class="nav-item">
+        <button class="nav-button"><a style="text-decoration: none;" href="/rooms">Rooms</a></button>
+    </div>
+    <div class="nav-item">
+        <button class="nav-button"><a style="text-decoration: none;" href="/aboutus">About us</a></button>
+    </div>
+    <div *ngIf="loggedin; else elseBlock" >
+        <div #thenBloc class="nav-item float-right">
+            <button class="nav-button"><a class=" myaccount" href="account">Account</a></button>
+            <button class="nav-button account"><a href="/logout">Logout</a></button>
+        </div>
+    </div>
+    <div #elseBlock class="nav-item float-right">
+        <button class="nav-button account" onclick="viewac_sub()" onfocusout="hideac_sub()">Account</button>
+    </div>
+</div>
+<div id="account-sub">
+    <a class="ac-sub-link" href="/signup">Sign up</a><br>
+    <a class="ac-sub-link" href="/signin">Sign in</a>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
+<!-- <app-home></app-home> -->
+<!-- <app-signup></app-signup> -->
+<!-- <app-signin></app-signin> -->
+<!-- <app-book></app-book> -->
+<!-- <app-rooms></app-rooms> -->
+<!-- <app-aboutus></app-aboutus> -->

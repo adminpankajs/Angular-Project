@@ -1,0 +1,26 @@
+{{ onSubmit() }}
+<div id="book-main">
+    <div id="book-div">
+        <div id="book-img">
+            <img id="book-img-prop" src="../../../assets/home-bg.jpg" alt="">
+        </div>
+        <div id="book-details">
+            <p id="details-head">
+                <b><u>Your Details</u></b>
+            </p>
+            <form #userForm="ngForm" (ngSubmit) = "myonSubmit(userForm.value)">
+                <h2>Your Name : {{ myname }}</h2> 
+                <h2>Your Address : {{ myaddress }}</h2> 
+                <h2>Your Phone No. : {{ myphone }}</h2> 
+                <h2>Your Room Type : {{ myroomtype }}</h2>
+                <h2>Duration :</h2> 
+                <input style="font-size: x-large; width: 7vw; font-weight: bold;" type="text" value="dd/mm/yy" name="checkin" ngModel> 
+                - 
+                <input style="font-size: x-large; width: 7vw; font-weight: bold;" type="text" value="dd/mm/yy" name="checkout" ngModel>
+                <h2>Purpose :</h2><input style="font-size: x-large; width: 7vw; font-weight: bold;" type="text" name="feedback" ngModel><br>
+                <h1>Status : {{ loginstatus }}:{{ bookingstatus }}</h1><br>
+                <button type="submit" id="booknow-button">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- {{ myfunc() }} -->
+<!-- <div>
+    <h1>
+    {{ name }}<br>
+    {{ address }}<br>
+    {{ email }}<br>
+    {{ customercare }}<br>
+    </h1>
+</div> -->
+
+
+<div id="book-main">
+    <div id="book-div">
+        <div id="book-img">
+            <img id="book-img-prop" src="../../../assets/home-bg.jpg" alt="">
+        </div>
+        <div id="book-details">
+            <br>
+            <p id="details-head">
+                <b><u>Hotel Details</u></b>
+            </p>
+            <div *ngFor="let hotel of hotel">
+                <h2>Name : {{ hotel.name }}</h2>
+                <h2>Address : {{ hotel.address }}</h2>
+                <h2>Email : {{ hotel.email }}</h2>
+                <h2>Phone No. : {{ hotel.customercare }}</h2>
+            </div>
+            <br>
+            <p id="details-head">
+                <b><u>Staff Details</u></b>
+            </p>
+            <div *ngFor="let member of member">
+                <h2>Name : {{ member.name }}</h2>
+                <h2>Designation : {{ member.designation }}</h2>
+                <h2>Date of Joining : {{ member.joining }}</h2>
+                <h2>Alloted Wing : {{ member.wing }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

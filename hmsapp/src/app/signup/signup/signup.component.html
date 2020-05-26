@@ -1,0 +1,19 @@
+{{ signup() }}
+<div id="signup">
+    <div id="signup-form">
+        <img id="form-logo" src="../../../assets/Logo.jpg" alt=""><br>
+        <form #userForm="ngForm" (ngSubmit) = "onSubmit(userForm.value)">
+            <p class="form-ques">Name</p>
+            <input class="form-textbox" type="text" name="name" ngModel><br>
+            <p class="form-ques">Address</p>
+            <input class="form-textbox" type="text" name="address" ngModel><br>
+            <p class="form-ques">Phone No.</p>
+            <input class="form-textbox" type="text" name="phone" ngModel><br>
+            <p class="form-ques">Username</p>
+            <input class="form-textbox" type="text" name="username" ngModel><br>
+            <p class="form-ques">Password</p>
+            <input class="form-textbox" type="password" name="password" ngModel><br>
+            <button type="submit" id="signup-button">{{ mysignup }}</button>
+        </form>
+    </div>
+</div>

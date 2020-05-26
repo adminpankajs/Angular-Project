@@ -1,0 +1,48 @@
+#intro{
+    float: left;
+    background-image: url("../../../assets/home-bg.jpg");
+    height: 86vh;
+    width: 100%;
+    margin-top: -6vw;
+}
+
+
+#intro-head{
+    color: white;
+    font-size: 5vw;
+    margin-top: 10vw;
+    margin-left: 2vw;
+    color: white;
+}
+
+#intro-text{
+    background-color: rgba(15, 15, 15, 0.5);
+    width: 80vw;
+    padding: 1vw;
+    color: white;
+    font-size: 2vw;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+#booknow-div{
+    width: 98vw;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#booknow-button{
+    width: 15vw;
+    height: 5vw;
+    font-size: 2vw;
+    color: teal;
+    background-color: white;
+    border-radius: 2vw;
+    box-shadow: 0vw 1vw 1vw black;
+}
+
+#booknow-button:hover{
+    cursor: pointer;
+    color: rgb(0, 173, 173);
+    background-color: whitesmoke;
+}

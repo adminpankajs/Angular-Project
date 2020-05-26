@@ -1,0 +1,79 @@
+#navbar
+{
+    background-color: white;
+    height: 5vw;
+    width: 100%;
+    box-shadow: 0px 10px 20px grey;
+    overflow: hidden;
+}
+.nav-item{
+    float: left;
+    margin-left: 5vw;
+    margin-top: -4px;
+}
+
+#nav-logo{
+    width: 1vh;
+}
+#logo {
+    float: left;
+    width: 10vw;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+.nav-button {
+    width: 12vw;
+    height: 6vw;
+    background-color: white;
+    border: none;
+    font-size: 1.5vw;
+    font-family: 'Permanent Marker';
+    transition: background-color 0.75s ;
+}
+
+.nav-button:hover{
+    border-color: white;
+    background-color: teal;
+    cursor: pointer;
+}
+.nav-button:focus{
+    outline: none;
+}
+
+.float-right{
+    float: right;
+}
+.account{
+    font-family: sans-serif;
+    margin-right: 4vw;
+    color: teal;
+    font-size: 3vw;
+}
+
+.account:hover{
+    color: white;
+}
+
+#account-sub{
+    float: none;
+    /* outline: solid 2px black; */
+    width: 11vw;
+    margin-left: 83.25vw;
+    margin-top: 2vh;
+    font-size: 2.75vw;
+    text-align: right;
+    /* color: teal; */
+    /* background-color: white; */
+    opacity: 0;
+}
+
+.ac-sub-link{
+    color:white;
+    text-shadow: 2px 2px teal ;
+}
+
+.myaccount {
+    text-decoration: none;
+    margin-top: 2vw;
+}
